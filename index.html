@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منوی کافه</title>
+    <style>
+        body {
+            font-family: 'Vazir', sans-serif; /* فونت فارسی */
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        .menu-category {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .menu-category h2 {
+            font-size: 24px;
+            color: #444;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+
+        .menu-item {
+            background-color: #dcdcdc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background-color: #a9a9a9;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* تزیینات روی هر آیتم */
+        .menu-item:hover {
+            cursor: pointer;
+            background-color: #a9a9a9;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>منوی کافه</h1>
+
+    <div class="menu">
+        <!-- قهوه -->
+        <div class="menu-category">
+            <h2>قهوه</h2>
+            <div class="menu-item">
+                اسپرسو عربیکا (سینگل) <span>90T</span>
+            </div>
+            <div class="menu-item">
+                اسپرسو عربیکا (دبل) <span>110T</span>
+            </div>
+            <div class="menu-item">
+                اسپرسو 60-40 <span>75T</span>
+            </div>
+            <div class="menu-item">
+                اسپرسو ربوستا (سینگل) <span>50T</span>
+            </div>
+            <div class="menu-item">
+                آمریکنو عربیکا <span>105T</span>
+            </div>
+            <div class="menu-item">
+                کاپوچینو <span>100T</span>
+            </div>
+            <div class="menu-item">
+                نسکافه <span>100T</span>
+            </div>
+            <div class="menu-item">
+                شیرکاکائو <span>100T</span>
+            </div>
+            <div class="menu-item">
+                لاتِه <span>110T</span>
+            </div>
+            <div class="menu-item">
+                موکا <span>130T</span>
+            </div>
+            <div class="menu-item">
+                کارامل ماکیاتو <span>130T</span>
+            </div>
+        </div>
+
+        <!-- قهوه دمی -->
+        <div class="menu-category">
+            <h2>قهوه دمی</h2>
+            <div class="menu-item">
+                قهوه فرانسه <span>80T</span>
+            </div>
+            <div class="menu-item">
+                قهوه ترک <span>90T</span>
+            </div>
+            <div class="menu-item">
+                قهوه یونانی <span>100T</span>
+            </div>
+        </div>
+
+        <!-- چای و دمنوش -->
+        <div class="menu-category">
+            <h2>چای و دمنوش</h2>
+            <div class="menu-item">
+                چای سیاه <span>60T</span>
+            </div>
+            <div class="menu-item">
+                چای سبز <span>75T</span>
+            </div>
+            <div class="menu-item">
+                دمنوش بهار نارنج <span>80T</span>
+            </div>
+            <div class="menu-item">
+                دمنوش پنیرک <span>80T</span>
+            </div>
+            <div class="menu-item">
+                دمنوش زعفران <span>150T</span>
+            </div>
+        </div>
+
+        <!-- بار سرد -->
+        <div class="menu-category">
+            <h2>بار سرد</h2>
+            <div class="menu-item">
+                لیموناد <span>110T</span>
+            </div>
+            <div class="menu-item">
+                موهیتو <span>120T</span>
+            </div>
+            <div class="menu-item">
+                آناناس کولر <span>110T</span>
+            </div>
+            <div class="menu-item">
+                بلومانستر <span>90T</span>
+            </div>
+        </div>
+
+        <!-- قهوه سرد -->
+        <div class="menu-category">
+            <h2>قهوه سرد</h2>
+            <div class="menu-item">
+                آیس آمریکانو <span>85T</span>
+            </div>
+            <div class="menu-item">
+                کلدبرو <span>120T</span>
+            </div>
+            <div class="menu-item">
+                آیس لاته <span>130T</span>
+            </div>
+            <div class="menu-item">
+                آیس موکا <span>150T</span>
+            </div>
+        </div>
+
+        <!-- شیک -->
+        <div class="menu-category">
+            <h2>شیک</h2>
+            <div class="menu-item">
+                شیک وانیل <span>150T</span>
+            </div>
+            <div class="menu-item">
+                شیک شکلات <span>150T</span>
+            </div>
+            <div class="menu-item">
+                شیک توت فرنگی <span>150T</span>
+            </div>
+            <div class="menu-item">
+                شیک موز <span>150T</span>
+            </div>
+        </div>
+
+        <!-- دسر -->
+        <div class="menu-category">
+            <h2>دسر</h2>
+            <div class="menu-item">
+                رشته <span>50T</span>
+            </div>
+            <div class="menu-item">
+                خشکار <span>60T</span>
+            </div>
+            <div class="menu-item">
+                موچی <span>95T</span>
+            </div>
+        </div>
+
+        <!-- صبحانه و عصرانه -->
+        <div class="menu-category">
+            <h2>صبحانه و عصرانه</h2>
+            <div class="menu-item">
+                املت قارچ <span>140T</span>
+            </div>
+            <div class="menu-item">
+                املت اسفناج <span>110T</span>
+            </div>
+            <div class="menu-item">
+                املت گوجه <span>110T</span>
+            </div>
+            <div class="menu-item">
+                املت سوسیس <span>110T</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
